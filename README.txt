@@ -1,6 +1,6 @@
 para ver el control 
 
--instalar xampp o el html debe estar en algun un servidor ya sea local o en internet
+-instalar xampp o el html debe estar en  un servidor ya sea local o en internet
 -abrir con el servidor el archivo control.html
 -el archivo prueba cronometro funcional html es un archivo de prueba de como entraria en funcionamiento 
 el cronometro
