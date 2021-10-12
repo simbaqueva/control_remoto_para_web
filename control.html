@@ -1,0 +1,237 @@
+<div class="contol">
+<div>
+    <!-- cronometro de velocidad -->
+    <div class="cronometro">
+        <div id="reloj">0 : 00 : 00 : 00</div>
+    </div>
+    <div class="displaycrono">
+        <img src="1x/Recurso_2.png">
+    </div>
+    <!-- fondo del control -->
+    <img src="1x/Recurso_21.png" class="marco_control">
+    <img src="1x/Recurso_5.png" class="reflec">
+    <hr class="lineahorizontal1">
+    <hr class="lineahorizontal2">
+    <hr class="lineahorizontal3">
+    <!-- botones superiores -->
+    <button type="button" class="btn_private">
+        <img src="1x/Recurso_11.png" class="sombra_btn_superior">
+    </button>
+    <button type="button" class="btn_send">
+        <img src="1x/Recurso_12.png" class="sombra_btn_superior">
+    </button>
+    <!-- botones intermedios -->
+    <button type="button" class="btn_cam2">
+        <img src="1x/Recurso_9.png" class="sombra_btn_central">
+    </button>
+    <button type="button" class="btn_speed">
+        <img src="1x/Recurso_7.png" class="sombra_btn_central">
+    </button>
+    <button type="button" class="btn_slowly">
+        <img src="1x/Recurso_8.png" class="sombra_btn_central">
+    </button>
+    <button type="button" class="btn_cum">
+        <img src="1x/Recurso_10.png" class="sombra_btn_central">
+    </button>
+    <!-- boton star inferior -->
+    <button type="button" class="btn_start">
+        <img src="1x/Recurso_6.png" class="sombra_btn_start">
+    </button>
+</div>
+</div>
+<style>
+    @font-face { font-family: digital-7; src: url('digital-7/digital-7.ttf'); }
+    /* fondo */
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    .contol{
+        background-image: url("1x/recurso_4.png");
+        background-repeat: no-repeat;
+    }
+    .marco_control{
+        position: fixed;
+        transform: translate(4px, 1px);
+    }
+    .reflec{
+        transform: translate(4px, 1px);
+        opacity: 42%;
+    }
+    /* estilos del cronometro */
+    .cronometro{
+        position: fixed;
+    transform: translate(52px, 53px);
+    color: blue;
+    font-size: 22pt;
+    z-index: 1;
+    font-family: digital-7;
+    text-shadow: 0 0 8px #0004ff;
+    }
+    .displaycrono{
+        position: fixed;
+        z-index: 1;
+    transform: translate(40px, 37px);
+    }
+    /* lineas horizontales */
+    .lineahorizontal1{
+        position: fixed;
+    color: white;
+    z-index: 1;
+    height: -12px;
+    width: 193px;
+    transform: translate(34px, -520px);
+    }
+    .lineahorizontal2{
+        position: fixed;
+    color: white;
+    z-index: 1;
+    height: -12px;
+    width: 193px;
+    transform: translate(37px, -425px);
+    }
+    .lineahorizontal3{
+        position: fixed;
+    color: white;
+    z-index: 1;
+    height: -12px;
+    width: 193px;
+    transform: translate(35px, -159px);
+    }
+    /* estilos de los botones */
+    .btn_private{
+        z-index: 1;
+        position: fixed;
+        transform: translate(-240px, 134px);
+        padding: 0;
+    background-color: #000000;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    border-style: dotted;
+    }
+    .btn_private:active{
+        background-color: black;
+        opacity: 50%;
+        transform: translate(-240px, 138px);
+        
+    }
+    .btn_send{
+        z-index: 1;
+    position: fixed;
+    transform: translate(-127px, 140px);
+    padding: 0;
+    background-color: #000000;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    border-style: dotted;
+    }
+    .btn_send:active{
+        background-color: black;
+        opacity: 50%;
+        transform: translate(-127px, 144px);
+        
+    }
+
+    .btn_cam2{
+        z-index: 1;
+    position: fixed;
+    transform: translate(-175px, 228px);
+    padding: 0;
+    background-color: #000000;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    border-style: dotted;
+    }
+    .btn_cam2:active{
+        background-color: black;
+        opacity: 50%;
+        transform: translate(-175px, 230px);
+        
+    }
+    .btn_speed{
+        z-index: 1;
+    position: fixed;
+    transform: translate(-108px, 304px);
+    padding: 0;
+    background-color: #000000;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    border-style: dotted;
+    }
+    .btn_speed:active{
+        background-color: black;
+        transform: translate(-108px, 308px);
+        opacity: 50%;
+        
+    }
+    .btn_slowly{
+        z-index: 1;
+    position: fixed;
+    transform: translate(-239px, 304px);
+    padding: 0;
+    background-color: #000000;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    border-style: dotted;
+    }
+    .btn_slowly:active{
+        background-color: black;
+        transform: translate(-239px, 308px);
+        opacity: 50%;
+        
+    }
+    .btn_cum{
+        z-index: 1;
+    position: fixed;
+    transform: translate(-172px, 383px);
+    padding: 0;
+    background-color: #000000;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    border-style: dotted;
+    }
+    .btn_cum:active{
+        background-color: black;
+        transform: translate(-172px, 386px);
+        opacity: 50%;
+        
+    }
+    .btn_start{
+        z-index: 1;
+    position: fixed;
+    transform: translate(-199px, 485px);
+    padding: 0;
+    background-color: #000000;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    border-style: dotted;
+    }
+    .btn_start:active{
+        background-color: black;
+        transform: translate(-199px, 489px);
+        opacity: 50%;
+        
+    }
+    .sombra_btn_central{
+        box-shadow: 0 0 11px #000000;
+    border-radius: 19px;
+    background-color: black;
+    }
+    .sombra_btn_superior{
+        box-shadow: 0 0 15px #000000;
+        background-color: black;
+        }
+        .sombra_btn_start{
+            box-shadow: 0 0 15px #000000;
+            background-color: black;
+            width: 107px;
+            border-radius: 58px;
+        }
+</style>
